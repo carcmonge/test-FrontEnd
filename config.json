@@ -1,0 +1,8 @@
+{
+  "css": [
+    "src/sass/**/*.scss"
+  ],
+  "js": [
+    "src/js/**/*.js"
+  ]
+}

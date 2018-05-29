@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules
+jspm_packages
+
+# Generated files
+dist
+package-lock.json
+
+# Optional npm cache directory
+.npm
+
+### macOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
