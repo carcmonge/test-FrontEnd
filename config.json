@@ -1,5 +1,6 @@
 {
   "css": [
+    "node_modules/bulma/css/bulma.css",
     "src/sass/**/*.scss"
   ],
   "js": [
