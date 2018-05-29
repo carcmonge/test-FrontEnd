@@ -3,6 +3,8 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   background-color: $first;
+  color: $white;
+  transition: all 0.3s;
 }
 
 .container {
