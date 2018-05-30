@@ -20,7 +20,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 14px;
-    line-height: 33;
+    line-height: 3;
    }
 
   &__link {
@@ -67,3 +67,25 @@
 
    }
 }
+
+@media only screen and (max-width: 768px) {
+  .maps {
+    padding-bottom: 5em;
+    &__title {
+      font-size: 38px;
+      text-align: left;
+      margin-right: 0;
+    }
+
+    &__link{
+      &-container {
+        margin: 2em 0 0;
+      }
+    }
+  }
+  #map_canvas {
+      margin-top: 4em;
+  }
+}
+
+    
