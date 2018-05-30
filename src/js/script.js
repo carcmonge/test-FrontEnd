@@ -66,7 +66,31 @@ $(function () {
 
     });
 
+    // Get the video
+    var video = $("#video");
+    
 });
+
+function videoPlay() {
+  // Get the button
+  if (video.paused) {
+    video.play();
+    $(".video__play").html("Pause");
+    $(".video__play").fadeOut(1000);
+  } else {
+    video.pause();
+    $(".video__play").html("Play");
+  }
+}
+
+if ($("#video").length){
+  $("#video").addEventListener('ended', myHandler, false);
+  function myHandler(e) {
+    $(".video__play").html("Play");
+    $(".video__play").fadeIn(500);
+  }
+
+}
 
 $(".testimonials-container").on("init", function (event, slick) {
   $(".testiomonials__navigation__dots").text(parseInt(slick.currentSlide + 1) + ' / ' + slick.slideCount);

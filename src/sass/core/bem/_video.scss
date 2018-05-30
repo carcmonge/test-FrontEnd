@@ -1,0 +1,46 @@
+.video {
+  margin: 5em 0 0 0;
+  position: relative;
+  &-container {
+      background-color: #0f0f0f;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+  &__play {
+    &:hover {
+      display: block;
+    }
+  }
+  [data-media="play-pause"] {
+      display: block;
+      position: absolute;
+      top: calc(50% - 70px);
+      left: calc(50% - 70px);
+      color: #FFF;
+      outline: none;
+  }
+  [data-media] {
+      background-color: #111111;
+      border: 0;
+      border-radius: 50%;
+      font-weight: 700;
+      height: 120px;
+      letter-spacing: .3rem;
+      text-align: center;
+      text-transform: uppercase;
+      width: 120px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .video {
+  [data-media] {
+        font-size: 10px;
+        height: 60px;
+        width: 60px;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+    }
+  } 
+}

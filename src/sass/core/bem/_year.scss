@@ -1,0 +1,162 @@
+.year {
+  margin-top: 5em;
+  &__title {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 3em;
+    max-width: 800px;
+    margin: 0 auto;
+    span {
+      display: block;
+      font-size: 55px
+    }
+    &:before {
+      background-color: #fff;
+      content: '';
+      height: 100px;
+      margin: 0 auto;
+      width: 1px;
+      z-index: 999;
+      left: 0;
+      right: 0;
+      top: 8%;
+      width: 1px;
+      z-index: 999;
+      position: absolute;
+    }
+  }
+  &__element {
+    margin: 10em 0;
+  }
+  &__text {
+    &__subtitle {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+    }
+
+    &__title {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 48px;
+
+    }
+
+    &__description {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      margin-top: 2em;
+      padding-left: 3em;
+      position: relative;
+      &:before {
+        content: '';
+        border-bottom: 1px solid #FFF;
+        width: 6em;
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: -60px;
+      }
+    }
+
+    &__link {
+      font-family: 'Poppins', sans-serif;
+      color: $white;
+      font-size: 14px;
+      font-weight: 500;
+      position: relative;
+      padding: 0 10px;
+      z-index: 1;
+      text-transform: uppercase;
+      &:hover {
+        color: $white;
+      }
+      &:before {
+        transition: all 0.6s;
+        background-color: transparent;
+        content: '';
+        height: 100%;
+        position: absolute;
+        left: -20%;
+        top: -40%;
+        opacity: 1;
+        z-index: -1;
+        background-color: $second;
+        width: 50px;
+      }
+      &:hover {
+        &:before {
+          width: 0;
+        }
+      }
+      &-container {
+        margin: 2em 0;
+      }
+    }
+
+  }
+  &__image {
+    max-width: 400px;
+    margin: 5em auto;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    transition: all 0.6s;
+    z-index: 1;
+    &__number {
+      font-family: 'Poppins', sans-serif;
+      font-size: 100px;
+      font-weight: bold;
+
+      position: absolute;
+      left: -50px;
+      top: -65px;
+    }
+    &:after {
+      content: '';
+      background-image: url(../img/decoration.svg);
+      background-size: cover;
+      height: 195px;
+      width: 195px;
+      position: absolute;
+      bottom: -54px;
+      right: -50px;
+      z-index: -1;
+    }
+    img {
+      display: block;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .year {
+    &__title {
+      font-size: 30px;
+    }
+    &__element {
+      margin: 5em 0;
+    }
+    &__text {
+      &__subtitle {
+        font-size: 10px;
+      }
+      &__title {
+        font-size: 30px;
+      }
+    }
+
+    &__image {
+      &__number {
+        font-size: 35px;
+        left: -10px;
+        top: -25px;
+      }
+    }
+  } 
+}

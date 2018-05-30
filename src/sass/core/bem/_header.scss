@@ -8,6 +8,10 @@
 
   position: relative;
 
+  &--nopadding {
+      height: auto;
+  }
+
   &__line {
     border-bottom: 1px solid #FFF;
     width: 3em;

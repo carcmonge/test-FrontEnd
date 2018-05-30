@@ -1,20 +1,18 @@
-.banner {
-  margin-top: 2em;
-  margin-left: 10em;
-  max-width: 500px;
+#map_canvas {
+  height: 500px;
+  width: 100%;
+  margin-top: 8em;
+  max-width: 800px;
+}
 
-  &__subtitle {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
-  }
-  
+.maps {
+  padding-bottom: 10em;
   &__title {
     font-family: 'Merriweather', serif;
     font-weight: 700;
     font-size: 58px;
+    text-align: right;
+    margin-right: -1em;
 
   }
 
@@ -22,6 +20,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 14px;
+    line-height: 33;
    }
 
   &__link {
@@ -55,7 +54,7 @@
       }
     }
     &-container {
-      margin: 2em 0;
+      margin: 7em 0 0 0;
     }
   }
 
@@ -67,27 +66,4 @@
     margin: 1em 0 2em -1.5em;
 
    }
-}
-
-@media only screen and (max-width: 768px) {
-  .banner {
-    margin-left: 0;
-    max-width: auto;
-    &__subtitle {
-      font-size: 10px;
-    }
-    
-    &__title {
-      font-size: 35px;
-
-    }
-
-    &__description {
-      font-size: 14px;
-    }
-    
-    &__link {
-      font-size: 14px;
-    }
-  } 
 }
