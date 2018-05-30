@@ -1,0 +1,106 @@
+.pricing {
+  padding-bottom: 5em;
+  &__top {
+    margin-top: 2em;
+    margin-left: 10em;
+    max-width: 500px;
+    padding-bottom: 5em;
+  }
+
+  &__elements {
+    .column {
+      padding: 0;
+    }
+  }
+  
+  &__element {
+    padding: 2em 2em;
+    background-color: #0f0f0f;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+    &__bigtitle {
+      font-family: 'Merriweather', serif;
+      font-weight: bold;
+      font-size: 28px;
+      color: #FFF;
+      display: block;
+      margin-bottom: 1em;
+      &:before {
+        background-color: #fff;
+        content: '';
+        height: 1px;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        top: 15%;
+        width: 20px;
+        z-index: 999;
+      }
+
+      &--back {
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        &:before {
+          transition: all 0.6s;
+          background-color: transparent;
+          content: '';
+          height: 43%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 1;
+          z-index: -1;
+          background-color: $second;
+          width: 100%;
+          transform-origin: bottom;
+          transform: rotate(180deg);
+        }
+      }
+    }
+    &__title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 10px;
+      color: #888081;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 0em;
+    }
+
+    &__caption {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      color: #fff;
+      display: block;
+      margin-bottom: 1.5em;
+    }
+    &__footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 3em;
+      h4 {
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+        font-size: 28px;
+      }
+      &__link {
+        color: $white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 10px;
+        margin-right: 1em;
+        text-transform: uppercase;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}

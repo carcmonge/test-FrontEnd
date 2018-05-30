@@ -1,0 +1,23 @@
+.newsletter {
+  &__title {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 58px;
+    text-align: center;
+    padding-bottom: 3em;
+    &:before {
+      background-color: #fff;
+      content: '';
+      height: 120px;
+      margin: 0 auto;
+      width: 1px;
+      z-index: 999;
+      left: 0;
+      right: 0;
+      top: 15%;
+      width: 1px;
+      z-index: 999;
+      position: absolute;
+    }
+  }
+}

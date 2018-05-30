@@ -20,4 +20,18 @@
       margin-bottom: 0 !important;
     }
   }
+  &__caption {
+    text-align: right;
+    &__link {
+      color: $white;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      margin-right: 1em;
+      text-transform: uppercase;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
 }

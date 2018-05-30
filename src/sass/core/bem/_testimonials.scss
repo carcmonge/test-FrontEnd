@@ -1,0 +1,78 @@
+.testimonials {
+  margin-bottom: 10em;
+  &__title {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 58px;
+    text-align: center;
+    margin-bottom: 3em;
+    &:before {
+      background-color: #fff;
+      content: '';
+      height: 120px;
+      margin: 0 auto;
+      width: 1px;
+      z-index: 999;
+      left: 0;
+      right: 0;
+      top: 15%;
+      width: 1px;
+      z-index: 999;
+      position: absolute;
+    }
+  }
+  &__element {
+    background-color: #1A1A1A;
+    height: 100%;
+    position: relative;
+    width: 460px;
+    height: 460px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    &__title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      margin: 2em 0 0em 0;
+      strong {
+        color: $white;
+      }
+
+    }
+    &__subtitle {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 10px;
+      color: #5a5a5a;
+    }
+    img {
+      max-width: 200px;
+    }
+  }
+  &__navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $white;
+    }
+    &__line {
+      border-bottom: 1px solid #FFF;
+      width: 5em;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 1em;
+    }
+  }
+  .slick-dots {
+    display: none !important;
+  }
+}
