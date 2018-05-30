@@ -1,23 +1,56 @@
 .newsletter {
+  padding-top: 150px;
+  padding-bottom: 150px;
   &__title {
     font-family: "Merriweather", serif;
     font-weight: 700;
-    font-size: 58px;
+    font-size: 48px;
     text-align: center;
     padding-bottom: 3em;
+    max-width: 800px;
+    margin: 0 auto;
     &:before {
       background-color: #fff;
       content: '';
-      height: 120px;
+      height: 100px;
       margin: 0 auto;
       width: 1px;
       z-index: 999;
       left: 0;
       right: 0;
-      top: 15%;
+      top: 43%;
       width: 1px;
       z-index: 999;
       position: absolute;
     }
+  }
+  form {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  input[type=text] {
+    width: 100%;
+    outline: none;
+    background: transparent;
+    border: 1px solid $white;
+    padding: 5px 2em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: $white;
+    height: 80px;
+    display: inline-block;
+  }
+  input[type=submit] {
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    background: transparent;
+    color: #FFF;
+    border-left: none;
+
+  }
+  .column {
+    padding: 0;
   }
 }
