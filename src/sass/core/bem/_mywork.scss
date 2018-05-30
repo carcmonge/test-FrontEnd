@@ -1,0 +1,23 @@
+.mywork {
+  &__top {
+    margin-top: 2em;
+    margin-left: 10em;
+    max-width: 500px;
+    padding-bottom: 5em;
+
+  }
+  &__gallery {
+    padding: 10em 0;
+    height: 50vh;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .tile.is-parent {
+      padding: 0;
+    }
+    .tile.is-vertical>.tile.is-child:not(:last-child) {
+      margin-bottom: 0 !important;
+    }
+  }
+}

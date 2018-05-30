@@ -1,0 +1,70 @@
+.banner {
+  margin-top: 2em;
+  margin-left: 10em;
+  max-width: 500px;
+
+  &__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+  }
+  
+  &__title {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 58px;
+
+   }
+
+   &__description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+   }
+
+   &__link {
+      font-family: 'Poppins', sans-serif;
+      color: $white;
+      font-size: 14px;
+      font-weight: 500;
+      position: relative;
+      padding: 0 10px;
+      z-index: 1;
+      text-transform: uppercase;
+      &:hover {
+        color: $white;
+      }
+      &:before {
+        transition: all 0.6s;
+        background-color: transparent;
+        content: '';
+        height: 100%;
+        position: absolute;
+        left: -20%;
+        top: -40%;
+        opacity: 1;
+        z-index: -1;
+        background-color: $second;
+        width: 50px;
+      }
+      &:hover {
+        &:before {
+          width: 0;
+        }
+      }
+      &-container {
+        margin: 2em 0;
+      }
+   }
+
+   &__line {
+    border-bottom: 1px solid #FFF;
+    width: 7em;
+    display: block;
+    vertical-align: middle;
+    margin: 1em 0 2em -1.5em;
+
+   }
+}
