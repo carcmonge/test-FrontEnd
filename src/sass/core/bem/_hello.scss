@@ -100,3 +100,25 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .hello {
+    &__subtitle {
+      font-size: 10px;
+    }
+    
+    &__title {
+      font-size: 35px;
+
+    }
+
+    &__image {
+      &:before {
+        display: none;
+      }
+      &:after {
+        display: none;
+      }
+    }
+  } 
+}

@@ -1,0 +1,33 @@
+.footer-new {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  &__menu {
+    &__title {
+      font-family: "Merriweather", serif;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 1em;
+    }
+    &__options {
+      span {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        display: block;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-new {
+    &__menu {
+      text-align: center;
+      &__options {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}

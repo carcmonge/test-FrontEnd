@@ -104,3 +104,11 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .pricing {
+    &__top {
+      margin-left: 0;
+    }
+  } 
+}

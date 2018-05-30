@@ -5,6 +5,7 @@ body {
   background-color: $first;
   color: $white;
   transition: all 0.3s;
+  overflow-x: hidden;
 }
 
 .container {

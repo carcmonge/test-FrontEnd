@@ -37,31 +37,28 @@ $(function () {
     slidesToShow: 1,
     dots: true,
     speed: 1000,
+    infinite: false,
     prevArrow: ".pp-testimonials",
     nextArrow: ".nn-testimonials",
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 1100,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '60px',
+          centerMode: false,
           slidesToShow: 1
         }
-      },{
+      },
+      {
         breakpoint: 768,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
+          centerMode: false,
           slidesToShow: 1
         }
       },
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
+          centerMode: false,
           slidesToShow: 1
         }
       }

@@ -48,3 +48,13 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .numbers {
+    &__element {
+      &__number {
+        font-size: 35px;
+      }
+    }
+  } 
+}

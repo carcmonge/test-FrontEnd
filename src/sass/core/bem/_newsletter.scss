@@ -54,3 +54,25 @@
     padding: 0;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .newsletter {
+    &__title {
+      font-size: 30px;
+      &:before {
+        top: 39%;
+        height: 50px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 458px) {
+  .newsletter {
+    &__title {
+      &:before {
+        top: 55%;
+        height: 50px;
+      }
+    }
+  }
+}
